@@ -79,7 +79,10 @@ function CandidateOnboarding() {
     }
     setIsEdit(false);
   };
-
+  const logout=()=>{
+    window.localStorage.clear();
+    navigate('/');
+  }
   return screenLoading ? (
    <FormLoading 
    fields={10}
@@ -127,7 +130,7 @@ function CandidateOnboarding() {
               </div>
             )}
           </div>
-          <Button type="button">Logout</Button>
+          <Button type="button" onClick ={logout}>Logout</Button>
         </Grid>
         <Grid item xs={12} md={6}>
           <label className="onboarding-label">Name</label>

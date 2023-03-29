@@ -67,3 +67,25 @@ export const companySize=[
   '500-1000',
   '100+',
 ]
+
+export const jobType=[
+  'Full Time',
+  'Part Time',
+  'Contract',
+  'Internship',
+]
+export const yearsOfExperience=[
+  '0-1',
+  '1-2',
+  '2-5',
+  '5-10',
+  '10+',
+]
+
+export const salaryCurrency=[
+  'USD',
+  'EUR',
+  'INR',
+  'GBP',
+  'AUD',
+]

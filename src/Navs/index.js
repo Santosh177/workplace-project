@@ -88,13 +88,14 @@ function Navs() {
           path="/candidate/auth"
           element={<Auth usertype={"candidate"} />}
         />
-        <Route element={<Candidateprotected />}>
-          <Route path="/candidate/jobs" element={<CandidateJobs />} />
-          <Route path="/candidate/profile" element={<CandidateProfile />} />
-          <Route
+        <Route
             path="/candidate/onboarding"
             element={<CandidateOnboarding />}
           />
+            <Route element={<Candidateprotected />}>
+          <Route path="/candidate/jobs" element={<CandidateJobs />} />
+          <Route path="/candidate/profile" element={<CandidateProfile />} />
+          
           <Route
             path="/candidate/applications"
             element={<CandidateApplications />}
@@ -103,11 +104,11 @@ function Navs() {
             path="/candidate/conversation"
             element={<CandidateConversation />}
           />
-        </Route>
+          </Route><Route path="/employer/onboarding" element={<EmployerOnboarding />} />
         <Route element={<EmployerProtected />}>
           <Route path="/employer/jobs" element={<EmployerJobs />} />
           <Route path="/employer/profile" element={<EmployerProfile />} />
-          <Route path="/employer/onboarding" element={<EmployerOnboarding />} />
+         
           <Route path="/employer/applicants" element={<EmployerApplicants />} />
           <Route
             path="/employer/conversation"

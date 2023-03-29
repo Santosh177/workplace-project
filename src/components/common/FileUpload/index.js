@@ -10,10 +10,10 @@ import {
 import {storage} from "../../../firebaseconfig";
 function FileUpload({ filetype, onUpload, value,disabled }) {
   const upload = (e) => {
-    const file = e.target.files[0];
+    const file = e.target.files[0];//store the file
     console.log(file);
 
-    const storageRef = ref(storage, `${filetype}/${file.name}`);
+    const storageRef = ref(storage, `${filetype}/${file.name}`);//generate using ref function
 
     const uploadTask = uploadBytesResumable(storageRef, file);
 

@@ -24,7 +24,7 @@ const reducer = (state, action) => {
       localStorage.setItem("user", JSON.stringify(data));
       return data;
     case "LOGOUT":
-      var data = {
+       data = {
         user: null,
         isAuth: false,
         userInfo: null,
@@ -32,7 +32,7 @@ const reducer = (state, action) => {
       localStorage.setItem("user", JSON.stringify(data));
       return data;
     case "SET_USER_INFO":
-      var data = {
+       data = {
         ...state,
         userInfo: action.payload,
       };
