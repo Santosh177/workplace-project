@@ -1,6 +1,14 @@
 import React from "react";
 import Cards from "../common/Cards";
 import micon from "../../assects/micon.png";
+import hrVec from "../../assects/hrVec.png";
+import financeVec from "../../assects/financeVec.png";
+import pmVec from "../../assects/pmVec.png";
+import customerSuppVec from "../../assects/customerSuppVec.png";
+import consultingVec from "../../assects/consultingVec.png";
+import designVec from "../../assects/designVec.png";
+import govJob from "../../assects/govJob.png";
+
 const data = [
   {
     title: "Marketing & Communication",
@@ -8,39 +16,39 @@ const data = [
     icon: micon,
   },
   {
-    title: "Marketing & Communication",
+    title: "Design & Development",
     subtitle: "237 Jobs Available",
-    icon: micon,
+    icon: designVec,
   },
   {
-    title: "Marketing & Communication",
+    title: "HR & Development",
     subtitle: "237 Jobs Available",
-    icon: micon,
+    icon: hrVec,
   },
   {
-    title: "Marketing & Communication",
+    title: "Finance Management",
     subtitle: "237 Jobs Available",
-    icon: micon,
+    icon: financeVec,
   },
   {
-    title: "Marketing & Communication",
+    title: "Project Management",
     subtitle: "237 Jobs Available",
-    icon: micon,
+    icon: pmVec,
   },
   {
-    title: "Marketing & Communication",
+    title: "Customer Support",
     subtitle: "237 Jobs Available",
-    icon: micon,
+    icon: customerSuppVec,
   },
   {
-    title: "Marketing & Communication",
+    title: "Business & Consulting",
     subtitle: "237 Jobs Available",
-    icon: micon,
+    icon: consultingVec,
   },
   {
-    title: "Marketing & Communication",
+    title: "Government Job",
     subtitle: "237 Jobs Available",
-    icon: micon,
+    icon: govJob,
   },
 ];
 function OnePlatform() {
